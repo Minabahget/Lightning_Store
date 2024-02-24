@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{18F6270F-09A5-4D84-BCC6-D26E771E9500}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MN_Lightining_Shop_Management_System</RootNamespace>
+    <AssemblyName>MN Lightining Shop Management System</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>LightBulb_4.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="ClosedXML, Version=0.95.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ClosedXML.0.95.4\lib\net46\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.7.2.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.7.2\lib\net46\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelNumberFormat, Version=1.0.10.0, Culture=neutral, PublicKeyToken=23c6f5d73be07eca, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelNumberFormat.1.0.10\lib\net20\ExcelNumberFormat.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.Primitives.4.0.1\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Packaging, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Packaging.4.0.0\lib\net46\System.IO.Packaging.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Alert_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alert_Form.designer.cs">
+      <DependentUpon>Alert_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConfirmAccount_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfirmAccount_Form.designer.cs">
+      <DependentUpon>ConfirmAccount_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory_Options_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory_Options_Form.designer.cs">
+      <DependentUpon>Inventory_Options_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory_Search_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory_Search_Form.designer.cs">
+      <DependentUpon>Inventory_Search_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogIn_Class.cs" />
+    <Compile Include="LogIn_Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogIn_Form2.designer.cs">
+      <DependentUpon>LogIn_Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main_Functions.cs" />
+    <Compile Include="NewControls_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewControls_Form.designer.cs">
+      <DependentUpon>NewControls_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Products_Add_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Products_Add_Form.designer.cs">
+      <DependentUpon>Products_Add_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Products_Delete_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Products_Delete_Form.designer.cs">
+      <DependentUpon>Products_Delete_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Remeber_Class.cs" />
+    <Compile Include="Remember_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remember_Form.designer.cs">
+      <DependentUpon>Remember_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddDeleteOptions_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddDeleteOptions_Form.designer.cs">
+      <DependentUpon>AddDeleteOptions_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryReport_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryReport_Form.designer.cs">
+      <DependentUpon>InventoryReport_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetReportsWord_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetReportsWord_Form.designer.cs">
+      <DependentUpon>SetReportsWord_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignUp_Class.cs" />
+    <Compile Include="SignUp_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUp_Form.designer.cs">
+      <DependentUpon>SignUp_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Categories_Add_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Categories_Add_Form.designer.cs">
+      <DependentUpon>Categories_Add_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Categories_Delete_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Categories_Delete_Form.designer.cs">
+      <DependentUpon>Categories_Delete_Form.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Alert_Form.resx">
+      <DependentUpon>Alert_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfirmAccount_Form.resx">
+      <DependentUpon>ConfirmAccount_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory_Options_Form.resx">
+      <DependentUpon>Inventory_Options_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory_Search_Form.resx">
+      <DependentUpon>Inventory_Search_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogIn_Form2.resx">
+      <DependentUpon>LogIn_Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewControls_Form.resx">
+      <DependentUpon>NewControls_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Products_Add_Form.resx">
+      <DependentUpon>Products_Add_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Products_Delete_Form.resx">
+      <DependentUpon>Products_Delete_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Remember_Form.resx">
+      <DependentUpon>Remember_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddDeleteOptions_Form.resx">
+      <DependentUpon>AddDeleteOptions_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryReport_Form.resx">
+      <DependentUpon>InventoryReport_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetReportsWord_Form.resx">
+      <DependentUpon>SetReportsWord_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUp_Form.resx">
+      <DependentUpon>SignUp_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Categories_Add_Form.resx">
+      <DependentUpon>Categories_Add_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Categories_Delete_Form.resx">
+      <DependentUpon>Categories_Delete_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Error_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inventory_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Right_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Word.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LightBulb_4.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
